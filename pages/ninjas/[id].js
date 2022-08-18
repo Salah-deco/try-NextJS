@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await res.json();
@@ -24,8 +22,6 @@ export const getStaticProps = async (context) => {
 }
 
 const Ninja = ({ ninja }) => {
-
-
     return ( 
         <div>
             <h1>{ninja.name}</h1>
