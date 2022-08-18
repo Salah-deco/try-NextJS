@@ -1,56 +1,25 @@
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <main className={styles.main}>
+      <main>
         <h1 className={styles.title}>
           Home page
         </h1>
-      </main>
-{/* 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p className={styles.text}>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, magnam. Consequuntur possimus accusamus veritatis ratione sequi blanditiis illo quod aliquam, alias in, necessitatibus architecto cupiditate deserunt magnam quas pariatur asperiores doloremque debitis accusantium veniam exercitationem deleniti quos? Nesciunt eaque dolorum sed culpa rem, aspernatur voluptatibus necessitatibus reiciendis natus molestias totam dolores pariatur quasi adipisci atque nulla tempora repellat sit quod voluptas recusandae dignissimos. Voluptatem expedita sunt ut aperiam deserunt, harum eaque alias consequatur, vero aspernatur illum voluptate cumque, suscipit exercitationem cupiditate repellat praesentium repellendus ipsa quasi magnam dolorum id? Nulla provident tempore perspiciatis vero, distinctio fuga error voluptatem ratione consequuntur.
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+        <p className={styles.text}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi doloribus perferendis harum natus quas mollitia ipsum in debitis, iure aut laudantium. Laboriosam eos voluptatum corrupti repudiandae voluptate dolores alias, sit dolorum eligendi, minus deserunt? Consectetur quod, unde molestiae blanditiis alias quas cupiditate. Iste voluptate, impedit sunt quas magni vitae.
+        </p>
+        <Link href="/ninjas">
+          <a className={styles.btn}>
+            see Ninja Listing
           </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main> */}
-
-     
+        </Link>
+      </main>
     </div>
   )
 }
